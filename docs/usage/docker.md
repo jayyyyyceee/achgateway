@@ -97,4 +97,4 @@ achgateway_1  | ts=2021-06-18T23:39:06Z msg="cleanup: deleted remote file /retur
 achgateway_1  | ts=2021-06-18T23:39:06Z msg="finished odfi periodic processing for testing" app=achgateway version=v0.4.1 level=info
 ```
 docker pull moov/ach:latest
-docker run -p 8080 
+docker run -p 8080:8080 -P 9090:9090 MOOV/ACH:latest
