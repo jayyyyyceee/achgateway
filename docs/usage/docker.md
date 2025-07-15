@@ -98,3 +98,5 @@ achgateway_1  | ts=2021-06-18T23:39:06Z msg="finished odfi periodic processing f
 ```
 docker pull moov/ACH:latest
 docker run -p 8080:8080 -p 9090:9090 moov/ach:latest
+curl localhost:8080/files
+{"files":[],"error":null}
